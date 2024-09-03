@@ -1,5 +1,3 @@
-import { IFile } from './IFiles';
-
 export interface IUser {
   email: string;
   fullName: string;
