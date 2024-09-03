@@ -1,0 +1,150 @@
+.storage_wrap {
+  overflow: hidden;
+}
+
+.storage_header {
+  width: 100%;
+  height: 62px;
+
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.storage_header_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.storage_header_title span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.search_block {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  width: 395px;
+  height: 42px;
+  background: #f9fafb;
+
+  position: relative;
+}
+
+.search_icon {
+  position: absolute;
+  z-index: 10;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search_input {
+  width: 100%;
+  height: 100%;
+  padding: 12px 35px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.search_clear_btn {
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.storage_body {
+  height: calc(100% - 62px);
+}
+
+.storage_body_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px;
+}
+
+.body_title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+
+.sort_files_block {
+  display: flex;
+  gap: 10px;
+}
+
+.add_file_btn {
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  padding: 6px 15px;
+
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  background: #37a0ea;
+
+  font-weight: 500;
+  font-size: 14px;
+  color: #f9fafb;
+
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.add_file_btn:hover {
+  background: transparent;
+  color: #37a0ea;
+  border-color: #37a0ea;
+}
+
+.storage_body_file_list {
+  height: calc(100% - 30px);
+  padding: 10px 10px;
+}
+
+.storage_body_file_list_grid {
+  height: calc(100% - 30px);
+
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+  grid-auto-rows: 95px;
+  gap: 10px;
+
+  overflow-y: auto;
+}
+
+.storage_body_file_list_grid::-webkit-scrollbar {
+  width: 7px;
+}
+
+.storage_body_file_list_grid::-webkit-scrollbar-thumb {
+  background-color: #a0afba;
+  border-radius: 7px;
+}
+
+.search_not_found,
+.storage_error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

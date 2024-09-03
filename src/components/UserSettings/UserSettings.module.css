@@ -1,0 +1,21 @@
+.wrapper {
+  padding: 10px;
+}
+
+.settings_title {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  height: 42px;
+  padding-left: 25px;
+}
+
+.user_info {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 18px;
+}

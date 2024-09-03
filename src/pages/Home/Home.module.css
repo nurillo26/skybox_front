@@ -1,0 +1,15 @@
+.home_wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+/* @media screen and (max-width: 900px) {
+  .home_wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: 100px 1fr;
+  }
+} */

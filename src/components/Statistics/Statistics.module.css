@@ -1,0 +1,31 @@
+.statistics_wrap {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.statistics_header {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+
+  height: 42px;
+  top: 50%;
+  padding-left: 25px;
+}
+
+.statistics_block {
+  height: calc(100% - 42px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty_files_diagram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 300;
+}
