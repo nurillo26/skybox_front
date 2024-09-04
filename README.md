@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# SkyBox Cloud Storage App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Демо
 
-Currently, two official plugins are available:
+Вы можете ознакомиться с работающим приложением по следующей ссылке:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Демо проекта](https://skybox09.netlify.app/)
 
-## Expanding the ESLint configuration
+## Тестовый аккаунт
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Для тестирования приложения вы можете использовать следующий аккаунт:
 
-- Configure the top-level `parserOptions` property like this:
+- **Логин:** test@gmail.com
+- **Пароль:** 11223344
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+После завершения тестирования, пожалуйста, удалите загруженные файлы, чтобы поддерживать чистоту демонстрационной среды.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Описание проекта
+
+**SkyBox** — это минималистичное full-stack приложение облачного хранилища. Приложение позволяет пользователям регистрироваться, загружать файлы, а также управлять своими файлами через интерфейс. Клиентская часть разработана на **React**, серверная — на **Node.js** с использованием **Express**.
+
+## Основные функции
+
+- **Регистрация и авторизация:** Пользователь может зарегистрироваться или войти в существующую учетную запись. После успешной аутентификации происходит редирект на главную страницу приложения.
+- **Загрузка файлов:** Пользователь может загружать файлы двумя способами: через кнопку "New File" или перетаскиванием файла в рабочую область.
+- **Управление файлами:** После загрузки файла он сохраняется на сервере в папке с уникальным ID пользователя. На клиенте отображается иконка файла, при наведении на которую появляются кнопки "Скачать" и "Удалить".
+- **Статистика:** Приложение предоставляет статистику, показывающую количество файлов различных типов (например, видео, документы и т.д.).
+
+## Технологии
+
+- **Frontend:**
+  - React
+  - Axios для отправки запросов на сервер
+
+- **Backend:**
+  - Node.js
+  - Express для создания API и обработки запросов
+  - Хранение файлов на сервере
