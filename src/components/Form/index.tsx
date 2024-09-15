@@ -5,6 +5,12 @@ import { useDispatch } from 'react-redux';
 import { setUser } from '../../redux/user/userSlice';
 import axios from 'axios';
 
+import emailIcon from '../../assets/img/form-icons/email_icon.svg';
+import passwordIcon from '../../assets/img/form-icons/password_icon.svg';
+import userIcon from '../../assets/img/form-icons/user.svg';
+import eyeOpenIcon from '../../assets/img/form-icons/eye.svg';
+import eyeCloseIcon from '../../assets/img/form-icons/eye-slash.svg';
+
 import styles from './Form.module.css';
 import Input from '../FormInput';
 
@@ -16,18 +22,18 @@ const loginInputs = [
     title: 'Email',
     inputType: 'email',
     inputName: 'email',
-    iconPath: 'src/assets/img/form-icons/email_icon.svg',
+    iconPath: emailIcon,
     placeholder: 'example@gmail.com',
   },
   {
     title: 'Пароль',
     inputType: 'password',
     inputName: 'password',
-    iconPath: 'src/assets/img/form-icons/password_icon.svg',
+    iconPath: passwordIcon,
     placeholder: 'Введите пароль',
     eyeIcon: {
-      open: 'src/assets/img/form-icons/eye.svg',
-      close: 'src/assets/img/form-icons/eye-slash.svg',
+      open: eyeOpenIcon,
+      close: eyeCloseIcon,
     },
   },
 ];
@@ -37,7 +43,7 @@ const registerInputs = [
     title: 'Полное имя',
     inputType: 'text',
     inputName: 'fullName',
-    iconPath: 'src/assets/img/form-icons/user.svg',
+    iconPath: userIcon,
     placeholder: 'Юрий Бойко',
   },
   {
